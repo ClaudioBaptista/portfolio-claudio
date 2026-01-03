@@ -7,10 +7,25 @@
 /* Configurações globais */
 html { 
   scroll-behavior: smooth; 
+  background-color: #0A192F; /* Garante fundo Navy mesmo em overscroll */
 }
 
-/* Barra de rolagem personalizada */
-::-webkit-scrollbar { width: 8px; }
-::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
-::-webkit-scrollbar-thumb:hover { background: #00ffcc; }
+/* Barra de rolagem Cyber-Industrial */
+::-webkit-scrollbar { 
+  width: 8px; 
+}
+
+::-webkit-scrollbar-track { 
+  background: #0A192F; /* Fundo Deep Navy */
+}
+
+::-webkit-scrollbar-thumb { 
+  background: #112240; /* Card Color (Discreto) */
+  border-radius: 4px; 
+  border: 1px solid #233554;
+}
+
+::-webkit-scrollbar-thumb:hover { 
+  background: #39FF14; /* Acento LOGIC Neon Green */
+  box-shadow: 0 0 10px #39FF14; /* Glow Effect */
+}
