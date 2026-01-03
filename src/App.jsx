@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence, useScroll, useSpring } from 'framer-motion';
-// Adicionei Globe e Zap aos imports
-import { Truck, Globe, Code2, Brain, Dices, Github, Linkedin, Mail, Menu, X, Sun, Moon, ArrowUp, MousePointer2, Zap } from 'lucide-react';
+// IMPORTS ATUALIZADOS: Adicionado Instagram, Removidos Github/Linkedin
+import { Globe, Code2, Brain, Dices, Mail, Instagram, Menu, X, Sun, Moon, ArrowUp, MousePointer2, Zap } from 'lucide-react';
 
 const App = () => {
   // --- ESTADOS GERAIS ---
@@ -14,7 +14,6 @@ const App = () => {
 
   // Estado para o Efeito de Digitação (Typewriter)
   const [currentWord, setCurrentWord] = useState(0);
-  // Palavras atualizadas para o contexto da LOGIC
   const words = ["Logística.", "Sistemas.", "iGaming.", "Futuro."];
 
   // --- EFEITOS (SCROLL, TEMA, DIGITAÇÃO) ---
@@ -62,7 +61,6 @@ const App = () => {
   };
 
   return (
-    // Atualizei a cor de fundo hardcoded para o background da LOGIC
     <div className={`min-h-screen transition-colors duration-300 ease-in-out ${theme === 'dark' ? 'bg-background text-gray-300' : 'bg-gray-50 text-gray-700'} selection:bg-neon selection:text-background font-sans relative overflow-x-hidden`}>
       
       {/* BARRA DE LEITURA SUPERIOR */}
@@ -76,7 +74,7 @@ const App = () => {
       {/* NAVBAR */}
       <nav className={`fixed top-0 w-full z-50 backdrop-blur-md border-b transition-colors duration-300 ${theme === 'dark' ? 'bg-background/90 border-neon/20' : 'bg-white/90 border-black/5'}`}>
         <div className="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
-          {/* LOGO ATUALIZADA */}
+          {/* LOGO */}
           <div className={`text-2xl font-extrabold tracking-tighter z-50 flex items-center gap-1 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
             LOGIC<span className="text-neon text-4xl leading-none">.</span>
           </div>
@@ -113,11 +111,11 @@ const App = () => {
 
       {/* HERO SECTION */}
       <section className="relative h-screen flex flex-col justify-center items-center px-6 text-center z-10">
-        {/* Glow Effects - Cores da marca */}
+        {/* Glow Effects */}
         <div className={`absolute top-20 right-0 w-[500px] h-[500px] rounded-full blur-[120px] pointer-events-none transition-opacity duration-500 ${theme === 'dark' ? 'bg-neon/10' : 'bg-neon/5'}`} />
         <div className={`absolute bottom-0 left-0 w-[500px] h-[500px] rounded-full blur-[120px] pointer-events-none transition-opacity duration-500 ${theme === 'dark' ? 'bg-blue-900/20' : 'bg-blue-500/5'}`} />
 
-        <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }}yb transition={{ duration: 0.8 }} className="relative max-w-5xl">
+        <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="relative max-w-5xl">
           <div className={`inline-flex items-center gap-2 mb-6 px-4 py-1.5 border rounded-full backdrop-blur-sm ${theme === 'dark' ? 'border-neon/30 bg-neon/5' : 'border-black/5 bg-black/5'}`}>
              <Zap size={14} className="text-neon" />
              <span className="text-neon text-xs font-bold tracking-[0.2em] uppercase">System Intelligence</span>
@@ -225,7 +223,7 @@ const App = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Ícone Globe para Logística (Global Network) */}
+            {/* Ícone Globe para Logística */}
             <ServiceCard theme={theme} icon={<Globe size={36} />} title="Logística & Supply Chain" desc="Otimização de rotas e monitoramento de fluxo global." borderColor="hover:border-neon" iconColor="text-neon" />
             
             {/* Ícone Code2 para Sistemas */}
@@ -234,7 +232,7 @@ const App = () => {
             {/* Ícone Brain para IA */}
             <ServiceCard theme={theme} icon={<Brain size={36} />} title="Inteligência Artificial" desc="Redes neurais e modelos preditivos aplicados ao negócio." borderColor="hover:border-purple" iconColor="text-purple" />
             
-            {/* Ícone Dices (Dados) para iGaming - Representando a aleatoriedade/probabilidade */}
+            {/* Ícone Dices para iGaming */}
             <ServiceCard theme={theme} icon={<Dices size={36} />} title="Engenharia de iGaming" desc="Matemática de slots, RNG e lógica de jogo de alta performance." borderColor="hover:border-gold" iconColor="text-gold" />
           </div>
         </div>
@@ -264,9 +262,11 @@ const App = () => {
           <div>
             <h4 className={`font-bold mb-6 border-b border-neon inline-block pb-1 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>Social</h4>
             <ul className="space-y-4 text-sm text-gray-500">
-              <FooterSocial href="mailto:contato@logic.com" icon={<Mail size={16}/>} text="contato@logic.com" theme={theme} />
-              <FooterSocial href="#" icon={<Linkedin size={16}/>} text="/company/logic" theme={theme} />
-              <FooterSocial href="#" icon={<Github size={16}/>} text="/logic-devs" theme={theme} />
+              {/* E-mail Atualizado */}
+              <FooterSocial href="mailto:claudioyuribaptista@icloud.com" icon={<Mail size={16}/>} text="claudioyuribaptista@icloud.com" theme={theme} />
+              
+              {/* Instagram Adicionado (Linkedin e Github removidos) */}
+              <FooterSocial href="https://instagram.com/claudioyuribaptista" icon={<Instagram size={16}/>} text="@claudioyuribaptista" theme={theme} />
             </ul>
           </div>
         </div>
