@@ -1,21 +1,24 @@
-# 👨‍💻 Portfólio Profissional | Claudio Baptista
+# 🚀 LOGIC Systems
 
-Bem-vindo ao meu portfólio oficial. Este projeto reúne meus trabalhos em desenvolvimento web, focando em experiências interativas, design responsivo e aplicações modernas.
+> **Intelligence in Motion.**
 
-🔗 **Acesse online:** [Link do seu portfólio na Vercel]
+Bem-vindo ao repositório oficial da **LOGIC**. Somos uma engenharia de decisão focada na convergência de três pilares críticos:
+1.  **Logística & Supply Chain** (Otimização de Fluxo)
+2.  **Sistemas & IA** (High-Performance Computing)
+3.  **Engenharia de iGaming** (Matemática e Probabilidade)
 
-## 🛠️ Tecnologias Utilizadas
-- **React.js:** Biblioteca principal para construção da interface.
-- **Vite:** Build tool ultrarrápida para desenvolvimento.
-- **Tailwind CSS:** Para estilização moderna e responsiva.
-- **Framer Motion:** Para animações fluidas e transições de página.
+🔗 **Acesse o site oficial:** [Insira seu link da Vercel aqui]
 
-## 🚀 Projetos em Destaque
-Este portfólio serve como vitrine para projetos complexos, incluindo:
-- **Fortune Squirrel:** Um jogo de slot completo com lógica de cassino e animações avançadas.
-- **Game Slot MVP:** O protótipo inicial de mecânicas de jogos de azar.
+## 🛠️ Tech Stack
+Nossa infraestrutura digital é construída com foco em performance e escalabilidade:
+- **Core:** React.js + Vite (High Performance Frontend)
+- **Styling:** Tailwind CSS (Cyber-Industrial Design System)
+- **Animation:** Framer Motion (Interações Fluidas)
+- **CI/CD:** Vercel Automated Pipelines
 
-## 📱 Funcionalidades
-- Design totalmente responsivo (Mobile First).
-- Navegação fluida entre seções.
-- Links diretos para contato (WhatsApp/LinkedIn).
+## 📱 Contato & Operações
+- **Instagram:** [@claudioyuribaptista](https://instagram.com/claudioyuribaptista)
+- **Email:** claudioyuribaptista@icloud.com
+
+---
+© 2026 LOGIC Systems. Todos os direitos reservados.
