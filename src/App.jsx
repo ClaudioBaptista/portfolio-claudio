@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence, useScroll, useSpring } from 'framer-motion';
-// IMPORTS ATUALIZADOS: Adicionado Instagram, Removidos Github/Linkedin
+// Imports de ícones e Analytics
 import { Globe, Code2, Brain, Dices, Mail, Instagram, Menu, X, Sun, Moon, ArrowUp, MousePointer2, Zap } from 'lucide-react';
+import { Analytics } from "@vercel/analytics/react"
 
 const App = () => {
   // --- ESTADOS GERAIS ---
@@ -223,16 +224,9 @@ const App = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Ícone Globe para Logística */}
             <ServiceCard theme={theme} icon={<Globe size={36} />} title="Logística & Supply Chain" desc="Otimização de rotas e monitoramento de fluxo global." borderColor="hover:border-neon" iconColor="text-neon" />
-            
-            {/* Ícone Code2 para Sistemas */}
             <ServiceCard theme={theme} icon={<Code2 size={36} />} title="Sistemas & Arquitetura" desc="Desenvolvimento robusto e escalável para operações críticas." borderColor={theme === 'dark' ? 'hover:border-white' : 'hover:border-black'} iconColor={theme === 'dark' ? 'text-white' : 'text-black'} />
-            
-            {/* Ícone Brain para IA */}
             <ServiceCard theme={theme} icon={<Brain size={36} />} title="Inteligência Artificial" desc="Redes neurais e modelos preditivos aplicados ao negócio." borderColor="hover:border-purple" iconColor="text-purple" />
-            
-            {/* Ícone Dices para iGaming */}
             <ServiceCard theme={theme} icon={<Dices size={36} />} title="Engenharia de iGaming" desc="Matemática de slots, RNG e lógica de jogo de alta performance." borderColor="hover:border-gold" iconColor="text-gold" />
           </div>
         </div>
@@ -262,10 +256,7 @@ const App = () => {
           <div>
             <h4 className={`font-bold mb-6 border-b border-neon inline-block pb-1 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>Social</h4>
             <ul className="space-y-4 text-sm text-gray-500">
-              {/* E-mail Atualizado */}
               <FooterSocial href="mailto:claudioyuribaptista@icloud.com" icon={<Mail size={16}/>} text="claudioyuribaptista@icloud.com" theme={theme} />
-              
-              {/* Instagram Adicionado (Linkedin e Github removidos) */}
               <FooterSocial href="https://instagram.com/claudioyuribaptista" icon={<Instagram size={16}/>} text="@claudioyuribaptista" theme={theme} />
             </ul>
           </div>
@@ -290,6 +281,9 @@ const App = () => {
           </motion.button>
         )}
       </AnimatePresence>
+
+      {/* Analytics da Vercel - Invisível mas poderoso */}
+      <Analytics />
     </div>
   );
 };
