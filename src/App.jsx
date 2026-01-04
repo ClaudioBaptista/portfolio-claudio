@@ -257,7 +257,7 @@ const App = () => {
             <h4 className={`font-bold mb-6 border-b border-neon inline-block pb-1 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>Social</h4>
             <ul className="space-y-4 text-sm text-gray-500">
               <FooterSocial href="mailto:claudioyuribaptista@icloud.com" icon={<Mail size={16}/>} text="claudioyuribaptista@icloud.com" theme={theme} />
-              <FooterSocial href="https://instagram.com/claudioyuribaptista" icon={<Instagram size={16}/>} text="@claudioyuribaptista" theme={theme} />
+              <FooterSocial href="https://instagram.com/logic.dev.br" icon={<Instagram size={16}/>} text="@logic.dev.br" theme={theme} />
             </ul>
           </div>
         </div>

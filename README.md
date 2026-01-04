@@ -7,7 +7,7 @@ Bem-vindo ao repositório oficial da **LOGIC**. Somos uma engenharia de decisão
 2.  **Sistemas & IA** (High-Performance Computing)
 3.  **Engenharia de iGaming** (Matemática e Probabilidade)
 
-🔗 **Acesse o site oficial:** [Insira seu link da Vercel aqui]
+🔗 **Acesse o site oficial:** (https://portfolio-claudio-six.vercel.app/)
 
 ## 🛠️ Tech Stack
 Nossa infraestrutura digital é construída com foco em performance e escalabilidade:
@@ -17,7 +17,7 @@ Nossa infraestrutura digital é construída com foco em performance e escalabili
 - **CI/CD:** Vercel Automated Pipelines
 
 ## 📱 Contato & Operações
-- **Instagram:** [@claudioyuribaptista](https://instagram.com/claudioyuribaptista)
+- **Instagram:** [@logic.dev.br](https://instagram.com/logic.dev.br)
 - **Email:** claudioyuribaptista@icloud.com
 
 ---
