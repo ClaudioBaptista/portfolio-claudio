@@ -227,13 +227,12 @@ const App = () => {
           
           <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="relative">
             <div className={`aspect-square md:aspect-[4/5] rounded-2xl overflow-hidden border flex items-center justify-center ${theme === 'dark' ? 'bg-card border-white/10' : 'bg-white border-gray-200 shadow-sm'} relative group`}>
-               {/* Aqui você pode colocar a tag <img src="/sua-foto.jpg" /> futuramente. Por enquanto deixei um ícone moderno de avatar */}
                <User size={100} strokeWidth={1} className={theme === 'dark' ? 'text-gray-700' : 'text-gray-300'} />
                <div className={`absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none ${theme === 'dark' ? 'bg-neon/5' : 'bg-green-600/5'}`} />
             </div>
             
             <div className={`absolute -bottom-6 -right-6 md:-right-8 p-6 rounded-xl border shadow-xl ${theme === 'dark' ? 'bg-background border-white/10' : 'bg-white border-gray-200'}`}>
-               <p className={`text-5xl font-extrabold mb-1 ${neonTextClass}`}>5<span className="text-3xl">+</span></p>
+               <p className={`text-5xl font-extrabold mb-1 ${neonTextClass}`}>3<span className="text-3xl">+</span></p>
                <p className={`text-xs font-bold uppercase tracking-widest ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>Anos de<br/>Experiência</p>
             </div>
           </motion.div>
@@ -243,7 +242,7 @@ const App = () => {
                <span className={`${neonTextClass} text-xs font-bold tracking-[0.2em] uppercase`}>Liderança Técnica</span>
             </div>
             <h2 className={`text-4xl md:text-5xl font-extrabold mb-6 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
-              Cláudio Yuri
+              Cláudio Baptista
             </h2>
             <p className={`text-lg mb-6 leading-relaxed ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>
               Especialista no desenvolvimento de ecossistemas digitais, unindo a visão estratégica de <strong className={theme === 'dark' ? 'text-white' : 'text-gray-900'}>Logística e Supply Chain</strong> com arquiteturas de software de alta escalabilidade.
