@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence, useScroll, useSpring } from 'framer-motion';
-import { Globe, Code2, Brain, Mail, Instagram, Menu, X, Sun, Moon, ArrowUp, Zap, MessageCircle, Truck, Send, Cloud, Database, Server, User } from 'lucide-react';
+import { Globe, Code2, Brain, Mail, Instagram, Menu, X, Sun, Moon, ArrowUp, Zap, MessageCircle, Truck, Send, Cloud, Database, Server } from 'lucide-react';
 import { Analytics } from "@vercel/analytics/react";
 import { Toaster, toast } from 'react-hot-toast';
 
@@ -221,13 +221,16 @@ const App = () => {
         </div>
       </section>
 
-      {/* NOVA SECÇÃO: LIDERANÇA / BIOGRAFIA */}
+      {/* SECÇÃO: LIDERANÇA / BIOGRAFIA COM A FOTOGRAFIA */}
       <section id="founder" className={`py-24 px-6 relative z-10 border-t transition-colors duration-300 ${theme === 'dark' ? 'bg-[#0a1120] border-white/5' : 'bg-gray-50 border-gray-200'}`}>
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
           
           <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="relative">
             <div className={`aspect-square md:aspect-[4/5] rounded-2xl overflow-hidden border flex items-center justify-center ${theme === 'dark' ? 'bg-card border-white/10' : 'bg-white border-gray-200 shadow-sm'} relative group`}>
-               <User size={100} strokeWidth={1} className={theme === 'dark' ? 'text-gray-700' : 'text-gray-300'} />
+               
+               {/* FOTOGRAFIA INSERIDA AQUI */}
+               <img src="/claudio.jpg" alt="Cláudio Baptista" className="w-full h-full object-cover object-top" />
+               
                <div className={`absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none ${theme === 'dark' ? 'bg-neon/5' : 'bg-green-600/5'}`} />
             </div>
             
