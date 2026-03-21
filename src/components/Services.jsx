@@ -1,44 +1,41 @@
 import React from 'react';
-import { FiCode, FiBox, FiTarget } from 'react-icons/fi';
+import { Terminal, Settings, Database } from 'lucide-react'; // Ícones técnicos
 import './Services.css';
 
-const servicesData = [
-  {
-    id: 1,
-    title: "Sistemas & IA",
-    description: "Desenvolvimento de arquiteturas web sob medida e integração com Inteligência Artificial para automatizar processos.",
-    icon: <FiCode /> 
-  },
-  {
-    id: 2,
-    title: "Logística e Supply Chain",
-    description: "Soluções tecnológicas focadas em otimização operacional e máxima eficiência para a sua cadeia de suprimentos.",
-    icon: <FiBox />
-  },
-  {
-    id: 3,
-    title: "Engenharia de iGaming",
-    description: "Consultoria técnica avançada e estruturação de plataformas robustas e seguras para o mercado de apostas.",
-    icon: <FiTarget />
-  }
-];
-
 const Services = () => {
-  return (
-    <section id="solucoes" className="services-section">
-      <div className="services-header">
-        <h2 className="services-title">Nossas Soluções</h2>
-        <p className="services-subtitle">Expertise técnica para os desafios mais complexos.</p>
-      </div>
+  const services = [
+    {
+      title: "Engenharia de Software",
+      description: "Desenvolvimento de sistemas robustos e ecossistemas digitais de alta performance, focados em escalabilidade e segurança.",
+      icon: <Terminal size={40} />
+    },
+    {
+      title: "Inteligência Operacional",
+      description: "Otimização estratégica de fluxos logísticos e cadeias de suprimentos através de tecnologia aplicada e análise de processos.",
+      icon: <Settings size={40} />
+    },
+    {
+      title: "Arquitetura de Dados",
+      description: "Estruturação e gestão de dados complexos para suporte à decisão técnica e eficiência organizacional.",
+      icon: <Database size={40} />
+    }
+  ];
 
-      <div className="services-grid">
-        {servicesData.map((service) => (
-          <div key={service.id} className="service-card">
-            <div className="service-icon">{service.icon}</div>
-            <h3>{service.title}</h3>
-            <p>{service.description}</p>
-          </div>
-        ))}
+  return (
+    <section id="services" className="services-section">
+      <div className="container">
+        <h2 className="section-title">Soluções Estratégicas</h2>
+        <div className="services-grid">
+          {services.map((service, index) => (
+            <div key={index} className="service-card">
+              <div className="service-icon">
+                {service.icon}
+              </div>
+              <h3>{service.title}</h3>
+              <p>{service.description}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

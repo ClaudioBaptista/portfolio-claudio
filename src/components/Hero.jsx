@@ -1,23 +1,12 @@
-import React from 'react';
-import './Hero.css';
-
-const Hero = () => {
-  return (
-    <section className="hero">
-      <div className="hero-content">
-        <span className="brand-tag">LOGIC System</span>
-        <h1>Engenharia de Software e <br /> <span className="highlight">Inteligência Artificial</span></h1>
-        <p>
-          Consultoria especializada com 5 anos de experiência transformando 
-          desafios complexos em soluções escaláveis de alto impacto.
-        </p>
-        <div className="hero-actions">
-          <a href="#contato" className="btn-main">Falar com Especialista</a>
-          <a href="#solucoes" className="btn-sub">Ver Soluções</a>
-        </div>
-      </div>
-    </section>
-  );
-};
-
-export default Hero;
+// src/components/Hero.jsx (trecho do conteúdo)
+<div className="hero-content">
+  <h1>Logic IA</h1>
+  <p className="hero-subtitle">Sistemas Inteligentes & Otimização de Processos</p>
+  <p className="hero-description">
+    Soluções de engenharia de software integradas à expertise logística para transformar operações em resultados.
+  </p>
+  <div className="hero-buttons">
+    <a href="#about" className="btn-primary">Conhecer Expertise</a>
+    <a href="#contact" className="btn-secondary">Contato Profissional</a>
+  </div>
+</div>

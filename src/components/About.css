@@ -1,0 +1,50 @@
+/* src/components/About.css */
+.about-section {
+  padding: 80px 20px;
+  background-color: #0f172a; /* Slate 900 */
+  color: #f8fafc;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #60a5fa; /* Blue 400 */
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #cbd5e1;
+}
+
+.highlight {
+  color: #60a5fa;
+  font-weight: 600;
+}
+
+.badge-card {
+  background: #1e293b;
+  padding: 20px;
+  border-left: 4px solid #3b82f6;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.badge-card h4 {
+  color: #f8fafc;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .about-grid { grid-template-columns: 1fr; }
+}
