@@ -1,13 +1,14 @@
-# 🚀 LOGIC Systems
+# 🚀 Logic IA
 
 > **Intelligence in Motion.**
 
-Bem-vindo ao repositório oficial da **LOGIC**. Somos uma engenharia de decisão focada na convergência de três pilares críticos:
-1.  **Logística & Supply Chain** (Otimização de Fluxo)
-2.  **Sistemas & IA** (High-Performance Computing)
-3.  **Engenharia de iGaming** (Matemática e Probabilidade)
+Bem-vindo ao repositório oficial da **Logic IA**. Somos especialistas em tecnologia avançada com foco na aplicação de Inteligência Artificial para o setor de Logística e Supply Chain. Desenvolvemos soluções de ponta unindo:
 
-🔗 **Acesse o site oficial:** (https://portfolio-claudio-six.vercel.app/)
+1.  **IA Aplicada à Logística** (Previsão de Demanda e Modelagem de Dados)
+2.  **Roteirização Inteligente** (Otimização Matemática de Fluxo)
+3.  **Sistemas de Alta Performance** (Arquitetura Escalável)
+
+🔗 **Acesse o site oficial:** (https://logic.dev.br/)
 
 ## 🛠️ Tech Stack
 Nossa infraestrutura digital é construída com foco em performance e escalabilidade:
@@ -17,8 +18,9 @@ Nossa infraestrutura digital é construída com foco em performance e escalabili
 - **CI/CD:** Vercel Automated Pipelines
 
 ## 📱 Contato & Operações
+- **WhatsApp:** [(11) 91850-6875](https://wa.me/5511918506875)
+- **Email:** contato@logic.dev.br
 - **Instagram:** [@logic.dev.br](https://instagram.com/logic.dev.br)
-- **Email:** claudioyuribaptista@icloud.com
 
 ---
-© 2026 LOGIC Systems. Todos os direitos reservados.
+© 2026 Logic IA. Todos os direitos reservados.
