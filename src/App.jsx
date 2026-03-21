@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence, useScroll, useSpring } from 'framer-motion';
-import { Globe, Code2, Brain, Mail, Instagram, Menu, X, Sun, Moon, ArrowUp, Zap, MessageCircle, Truck, Send, Cloud, Database, Server } from 'lucide-react';
+import { Globe, Code2, Brain, Mail, Instagram, Menu, X, Sun, Moon, ArrowUp, Zap, MessageCircle, Truck, Send, Cloud, Database, Server, User } from 'lucide-react';
 import { Analytics } from "@vercel/analytics/react";
 import { Toaster, toast } from 'react-hot-toast';
 
@@ -86,7 +86,7 @@ const App = () => {
       <Toaster position="bottom-right" />
       <motion.div className="fixed top-0 left-0 right-0 h-1 bg-neon origin-left z-[60]" style={{ scaleX }} />
 
-      {/* NAVBAR ATUALIZADA */}
+      {/* NAVBAR */}
       <nav className={`fixed top-0 w-full z-50 backdrop-blur-md border-b transition-colors duration-300 ${theme === 'dark' ? 'bg-background/90 border-neon/20' : 'bg-white/90 border-black/5'}`}>
         <div className="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
           <div className={`text-2xl font-extrabold tracking-tighter z-50 flex items-center gap-1 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
@@ -221,14 +221,13 @@ const App = () => {
         </div>
       </section>
 
-      {/* SECÇÃO: LIDERANÇA / BIOGRAFIA COM A FOTOGRAFIA */}
+      {/* SECÇÃO: LIDERANÇA / BIOGRAFIA COM FORMAÇÃO */}
       <section id="founder" className={`py-24 px-6 relative z-10 border-t transition-colors duration-300 ${theme === 'dark' ? 'bg-[#0a1120] border-white/5' : 'bg-gray-50 border-gray-200'}`}>
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
           
           <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="relative">
             <div className={`aspect-square md:aspect-[4/5] rounded-2xl overflow-hidden border flex items-center justify-center ${theme === 'dark' ? 'bg-card border-white/10' : 'bg-white border-gray-200 shadow-sm'} relative group`}>
                
-               {/* FOTOGRAFIA INSERIDA AQUI */}
                <img src="/claudio.jpg" alt="Cláudio Baptista" className="w-full h-full object-cover object-top" />
                
                <div className={`absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none ${theme === 'dark' ? 'bg-neon/5' : 'bg-green-600/5'}`} />
@@ -251,7 +250,7 @@ const App = () => {
               Especialista no desenvolvimento de ecossistemas digitais, unindo a visão estratégica de <strong className={theme === 'dark' ? 'text-white' : 'text-gray-900'}>Logística e Supply Chain</strong> com arquiteturas de software de alta escalabilidade.
             </p>
             <p className={`text-lg mb-8 leading-relaxed ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>
-              A minha trajetória profissional é focada em traduzir problemas complexos do mundo real para sistemas e inteligência artificial aplicável. Com forte experiência em engenharia de sistemas e também conhecimentos na área de iGaming, a missão principal é projetar tecnologias que otimizam fluxos operacionais e garantem precisão matemática em cada tomada de decisão.
+              A minha dupla formação em <strong className={theme === 'dark' ? 'text-white' : 'text-gray-900'}>Logística</strong> e <strong className={theme === 'dark' ? 'text-white' : 'text-gray-900'}>Análise e Desenvolvimento de Sistemas</strong> permite-me atuar como a ponte exata entre os desafios reais da operação e a engenharia de software avançada. Com sólida experiência na criação de sistemas e conhecimentos em ambientes de altíssima performance (como iGaming), a missão principal é projetar tecnologias que otimizam fluxos e garantem precisão matemática em cada tomada de decisão.
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
