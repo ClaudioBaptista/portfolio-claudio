@@ -11,6 +11,8 @@ export default {
         background: "#0A192F", 
         card: "#112240", 
         neon: "#39FF14", 
+        purple: "#9d4edd",
+        gold: "#ffd700",
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
