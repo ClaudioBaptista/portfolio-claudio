@@ -45,16 +45,34 @@ export default function Hero() {
         </div>
       </section>
 
-      {/* Badges de Formação & Stack */}
-      <section className="border-y border-slate-800/80 bg-slate-900/30 backdrop-blur-sm py-8">
-        <div className="max-w-6xl mx-auto px-4 flex flex-wrap items-center justify-center gap-4 text-xs text-slate-300 font-semibold uppercase tracking-wider">
-          <span className="px-3.5 py-1.5 bg-slate-900/60 rounded-lg border border-slate-800 flex items-center gap-2 shadow-sm">
-            <Code2 className="w-3.5 h-3.5 text-blue-400" /> React.js & Vite
-          </span>
-          <span className="px-3.5 py-1.5 bg-slate-900/60 rounded-lg border border-slate-800">Tailwind CSS</span>
-          <span className="px-3.5 py-1.5 bg-slate-900/60 rounded-lg border border-slate-800">Análise e Dev. de Sistemas</span>
-          <span className="px-3.5 py-1.5 bg-slate-900/60 rounded-lg border border-slate-800">Tecnólogo em Logística</span>
-          <span className="px-3.5 py-1.5 bg-slate-900/60 rounded-lg border border-slate-800">MBA Supply Chain Management</span>
+      {/* Badges de Formação & Stack Tecnológica */}
+      <section className="border-y border-slate-800/80 bg-slate-900/30 backdrop-blur-sm py-10">
+        <div className="max-w-6xl mx-auto px-4 flex flex-col items-center gap-6">
+          
+          {/* Linha 1: Stack Técnica */}
+          <div className="text-center space-y-3">
+            <span className="text-slate-500 text-[10px] font-bold uppercase tracking-widest">Stack Tecnológica</span>
+            <div className="flex flex-wrap justify-center gap-3 text-xs text-slate-300 font-semibold uppercase tracking-wider">
+              <span className="px-3.5 py-1.5 bg-blue-900/20 text-blue-400 rounded-lg border border-blue-500/30 flex items-center gap-2 shadow-sm">
+                <Code2 className="w-3.5 h-3.5" /> React.js & Vite
+              </span>
+              <span className="px-3.5 py-1.5 bg-slate-900/80 rounded-lg border border-slate-700 hover:border-blue-500/50 transition-colors">JavaScript / TypeScript</span>
+              <span className="px-3.5 py-1.5 bg-slate-900/80 rounded-lg border border-slate-700 hover:border-blue-500/50 transition-colors">Tailwind CSS</span>
+              <span className="px-3.5 py-1.5 bg-slate-900/80 rounded-lg border border-slate-700 hover:border-blue-500/50 transition-colors">Node.js (APIs)</span>
+              <span className="px-3.5 py-1.5 bg-slate-900/80 rounded-lg border border-slate-700 hover:border-blue-500/50 transition-colors">SQL Database</span>
+            </div>
+          </div>
+
+          {/* Linha 2: Domínio de Negócio */}
+          <div className="text-center space-y-3 pt-2">
+            <span className="text-slate-500 text-[10px] font-bold uppercase tracking-widest">Domínio de Negócio (Logística)</span>
+            <div className="flex flex-wrap justify-center gap-3 text-[11px] text-slate-400 font-semibold uppercase tracking-wider">
+              <span className="px-3 py-1.5 bg-slate-950/60 rounded-md border border-slate-800/60">Análise e Dev. de Sistemas</span>
+              <span className="px-3 py-1.5 bg-slate-950/60 rounded-md border border-slate-800/60">Tecnólogo em Logística</span>
+              <span className="px-3 py-1.5 bg-slate-950/60 rounded-md border border-slate-800/60">MBA Supply Chain</span>
+            </div>
+          </div>
+
         </div>
       </section>
     </>
