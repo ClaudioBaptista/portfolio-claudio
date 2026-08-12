@@ -15,8 +15,8 @@ export default function App() {
       <Hero />
       <Sobre />
 
-      {/* Seção de Projetos Práticos & Demos */}
-      <section id="projetos" className="py-20 px-4 max-w-6xl mx-auto border-t border-slate-800/60">
+      {/* Seção de Projetos Práticos & Demos ajustada para o ID correto */}
+      <section id="services" className="py-20 px-4 max-w-6xl mx-auto border-t border-slate-800/60 scroll-mt-24">
         <div className="text-center max-w-2xl mx-auto mb-12">
           <span className="text-blue-400 text-xs font-bold uppercase tracking-widest">Demonstrativos Práticos</span>
           <h2 className="text-3xl font-bold text-white mt-2">Projetos de Estudo</h2>

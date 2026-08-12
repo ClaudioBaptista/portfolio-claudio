@@ -1,41 +1,49 @@
 import React from 'react';
-import { Home, User, Briefcase, Wrench, MessageSquare, Send, Cpu } from 'lucide-react';
+import { LayoutGrid, User, Mail, Github } from 'lucide-react';
 
 export default function Header() {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800/80">
-      <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-        {/* Logo */}
-        <div className="flex items-center gap-2 group cursor-pointer">
-          <Cpu className="text-blue-500 w-6 h-6 group-hover:rotate-12 transition-transform" />
-          <span className="text-xl font-black tracking-wider text-blue-500">
-            LOGIC<span className="text-white">.IA</span>
-          </span>
-        </div>
+    <header className="bg-gray-900/95 backdrop-blur-sm text-white sticky top-0 z-50 border-b border-gray-800 shadow-sm">
+      <div className="container mx-auto px-6 py-4 flex justify-between items-center">
+        {/* Logo / Nome */}
+        <a href="#" className="text-2xl font-bold tracking-wide text-blue-500 hover:text-blue-400 transition-colors">
+          Logic<span className="text-white">.ia</span>
+        </a>
 
-        {/* Navegação Desktop */}
-        <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-slate-300">
-          <a href="#home" className="flex items-center gap-1.5 hover:text-blue-400 transition-colors">
-            <Home className="w-4 h-4" /> Home
+        {/* Links de Navegação (Design moderno em pílula com ícones) */}
+        <nav className="hidden md:flex items-center space-x-1 bg-gray-800/50 p-1.5 rounded-full border border-gray-700/60">
+          <a 
+            href="#services" 
+            className="flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 transition-all"
+          >
+            <LayoutGrid size={16} />
+            Aplicações
           </a>
-          <a href="#sobre" className="flex items-center gap-1.5 hover:text-blue-400 transition-colors">
-            <User className="w-4 h-4" /> Sobre
+          <a 
+            href="#sobre" 
+            className="flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 transition-all"
+          >
+            <User size={16} />
+            Sobre Mim
           </a>
-          <a href="#projetos" className="flex items-center gap-1.5 hover:text-blue-400 transition-colors">
-            <Briefcase className="w-4 h-4" /> Projetos
-          </a>
-          <a href="#solucoes" className="flex items-center gap-1.5 hover:text-blue-400 transition-colors">
-            <Wrench className="w-4 h-4" /> Competências
+          <a 
+            href="#contato" 
+            className="flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 transition-all"
+          >
+            <Mail size={16} />
+            Contato
           </a>
         </nav>
 
-        {/* Botão CTA */}
+        {/* Botão GitHub (Também arredondado e com ícone) */}
         <a
-          href="#contato"
-          className="flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold px-4 py-2 rounded-lg transition-colors shadow-lg shadow-blue-500/20"
+          href="https://github.com/ClaudioBaptista/portfolio-claudio"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-all shadow-md hover:shadow-lg"
         >
-          <MessageSquare className="w-4 h-4" />
-          Fale Conosco
+          <Github size={18} />
+          GitHub
         </a>
       </div>
     </header>
