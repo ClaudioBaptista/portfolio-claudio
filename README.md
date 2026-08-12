@@ -1,45 +1,40 @@
-# 🚀 Cláudio Baptista | Portfólio de Engenharia e Logística
+# 📦 Logic IA | Portfólio Autoral de Supply Chain & Tecnologia
 
-> **Desenvolvedor Front-end Júnior | Especialista em Supply Chain**
-> 
-> Unindo a visão estratégica da Logística com o desenvolvimento de software moderno.
+> **Status do Projeto:** Concluído e em Produção (Deploy via Vercel)
+> **Acesso ao Site:** [logic.dev.br](https://logic.dev.br)
 
-Bem-vindo ao meu portfólio e laboratório de códigos! Este projeto foi desenvolvido para demonstrar minhas habilidades práticas em programação, aplicadas a cenários reais do setor de transportes e logística.
+## 🎯 Sobre o Projeto
 
-🔗 **Acesse o projeto online:** [https://logic.dev.br/](https://logic.dev.br/)
+A **Logic IA** é um laboratório prático e autoral desenvolvido do zero para demonstrar a minha capacidade técnica como Desenvolvedor Front-end Júnior. O objetivo deste projeto é materializar a minha dupla expertise: a **visão estratégica de negócios e operações logísticas** aliada ao **desenvolvimento de software moderno**.
 
----
+Nesta aplicação, construí interfaces e lógicas (React + JavaScript) que simulam soluções reais e dores diárias do setor de transportes e da cadeia de suprimentos (Supply Chain).
 
-## 🎯 Objetivo Profissional
+### 🛠️ Aplicações e Soluções Desenvolvidas
+* **Calculadora de Frete Dinâmica:** Integração assíncrona (Fetch API/Async Await) com a API REST do ViaCEP para simular o cálculo de distância regional, prazo e estimativa de peso.
+* **Simulador de Rastreio:** Gerenciamento de estados (`useState`) para criar uma timeline visual, interativa e condicional do fluxo de entregas (Last Mile).
+* **UI/UX Moderna:** Design responsivo focado na filosofia *Mobile First*, aplicando conceitos de *Clean Code* e componentização.
 
-Busco minha primeira oportunidade como **Desenvolvedor Júnior**. 
-Com formação técnica em Análise e Desenvolvimento de Sistemas, graduação em Logística e especialização em andamento (MBA em Supply Chain), meu maior diferencial é **entender a regra de negócio** antes de escrever o código.
+## 💻 Tecnologias Utilizadas
 
-## 🛠️ Tecnologias e Arquitetura
+* **Framework/Lib:** React.js e Vite
+* **Estilização:** Tailwind CSS
+* **Ícones:** Lucide React
+* **Integração:** API REST (ViaCEP)
+* **Deploy e CI/CD:** Vercel
 
-Este projeto foi construído focando em **Clean Code**, componentização, consumo de APIs e atenção aos detalhes visuais (UI/UX).
+## 👨‍💻 Sobre o Desenvolvedor
 
-* **Core:** React.js + Vite (Componentização e alta performance)
-* **Estilização e UI:** Tailwind CSS, Lucide Icons, efeitos de *Glassmorphism* (vidro fosco) e design responsivo (Mobile First).
-* **Integrações (APIs):** Consumo da API REST do ViaCEP (Fetch API + Async/Await)
-* **Deploy e CI/CD:** Vercel 
+**Cláudio Baptista**
+*Desenvolvedor Front-end & Especialista em Supply Chain*
 
-## 📦 Demonstrativos Práticos (Projetos Inclusos)
+Sou formado como Técnico em Análise e Desenvolvimento de Sistemas, com graduação em Logística e estudante de MBA em Logística e Supply Chain Management. 
 
-Dentro deste portfólio, desenvolvi ferramentas funcionais para provar meus conhecimentos:
-
-1. **Calculadora de Frete Dinâmica:** * **Como funciona:** O usuário insere os CEPs de origem/destino.
-   * **O que prova:** Consumo de API externa em tempo real, tratamento de erros, estados assíncronos e aplicação de lógica matemática de negócio (distância estimada e peso).
-   
-2. **Simulador de Rastreio:** * **Como funciona:** Uma timeline visual baseada em código de rastreamento.
-   * **O que prova:** Gerenciamento de estados (`useState`), simulação de loading state e construção de interface limpa.
+O meu maior diferencial no mercado de tecnologia é não apenas escrever código, mas compreender profundamente a **regra de negócio**, os indicadores de performance (KPIs) operacionais e as dores do cliente antes de planejar a arquitetura da solução. Busco a minha primeira oportunidade oficial na área de TI, com foco em desenvolvimento web (Front-end) ou análise de sistemas.
 
 ---
 
-## 💻 Como rodar este projeto localmente
+### 📬 Contatos
 
-Se você é um recrutador técnico e deseja avaliar o meu código na sua máquina, siga os passos:
-
-1. Clone o repositório:
-   ```bash
-   git clone [https://github.com/ClaudioBaptista/portfolio-claudio.git](https://github.com/ClaudioBaptista/portfolio-claudio.git)
+* **LinkedIn:** [Cláudio Baptista](https://www.linkedin.com/in/claudio-yuri-baptista-057487426/)
+* **E-mail:** claudioyuribaptista@icloud.com
+* **WhatsApp:** (11) 92671-6498
